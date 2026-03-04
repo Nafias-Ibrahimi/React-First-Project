@@ -2,11 +2,17 @@
 import React from 'react'
 import Welcome from './components/Welcome'
 import Counter from './components/Counter'
+import UserProfile from './components/UserProfile'
+import Form from './components/Form'
+import MiniProject from './components/MiniProject';
 function App() {
   return (
     <div>
-      <Welcome/>
-      <Counter/>
+      {/* <Welcome/>*/}
+       <Counter/>
+      {/* <UserProfile/> */}
+      {/* <Form/>
+      <MiniProject/> */}
 
     </div>
   )
