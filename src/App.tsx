@@ -4,7 +4,10 @@ import Welcome from './components/Welcome'
 import Counter from './components/Counter'
 import UserProfile from './components/UserProfile'
 import Form from './components/Form'
-import MiniProject from './components/MiniProject';
+import MiniProject from './components/MiniProject'
+import Users from './components/Users'
+
+import Timer from './components/Timer'
 function App() {
   return (
     <div>
@@ -13,6 +16,9 @@ function App() {
       {/* <UserProfile/> */}
       {/* <Form/>
       <MiniProject/> */}
+      <Users/>
+      <Timer/>
+
 
     </div>
   )
