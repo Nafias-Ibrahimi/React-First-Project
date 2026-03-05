@@ -11,6 +11,7 @@ import Timer from './components/Timer'
 import CountRef from './components/CountRef'
 
 import PreviouseValue from './components/PreviousValue'
+
 function App() {
   return (
     <div>
@@ -19,10 +20,10 @@ function App() {
       {/* <UserProfile/> */}
       {/* <Form/>
       <MiniProject/> */}
-      {/* <Users/>
-      <Timer/>
-      <CountRef/> */}
-      <PreviouseValue/>
+      {/* <Users/>*/}
+       <Timer/>
+      {/* <CountRef/>  */}
+      {/* <PreviouseValue/> */}
 
 
     </div>
