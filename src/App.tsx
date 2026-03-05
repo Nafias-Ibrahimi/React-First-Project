@@ -8,16 +8,21 @@ import MiniProject from './components/MiniProject'
 import Users from './components/Users'
 
 import Timer from './components/Timer'
+import CountRef from './components/CountRef'
+
+import PreviouseValue from './components/PreviousValue'
 function App() {
   return (
     <div>
       {/* <Welcome/>*/}
-       <Counter/>
+       {/* <Counter/> */}
       {/* <UserProfile/> */}
       {/* <Form/>
       <MiniProject/> */}
-      <Users/>
+      {/* <Users/>
       <Timer/>
+      <CountRef/> */}
+      <PreviouseValue/>
 
 
     </div>
