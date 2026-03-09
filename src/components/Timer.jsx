@@ -45,24 +45,57 @@
 //     </div>
 //   )
 // }
-import { forwardRef, useRef } from "react"
+// import { forwardRef, useRef } from "react"
 
-const Input = forwardRef((props, ref) => {
-  return <input ref={ref} {...props} />
-});
+// const Input = forwardRef((props, ref) => {
+//   return <input ref={ref} {...props} />
+// });
+
+// function Timer() {
+//   const inputRef = useRef(null);
+
+//   return (
+//     <div>
+//       <Input ref={inputRef} placeholder="Write something..." />
+//       <button onClick={() => inputRef.current.focus()}>
+//         Focus Child Input
+//       </button>
+//     </div>
+//   )
+// }
+
+// export default Timer
+import React, { useEffect, useState  ,useRef} from 'react';
+
+function FocusInput(){
+  const inputRef=useRef(null);
+  useEffect (() =>{
+    inputRef.current.focus();
+  },[]);
+  return <input ref={inputRef} placeholder='Focuse me on mount'/>
+}
 
 function Timer() {
-  const inputRef = useRef(null);
+  const [seconds, setSeconds] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setSeconds(prev => prev + 1);
+    }, 1000);
+
+    return () => clearInterval(interval);
+  }, []);
 
   return (
-    <div>
-      <Input ref={inputRef} placeholder="Write something..." />
-      <button onClick={() => inputRef.current.focus()}>
-        Focus Child Input
-      </button>
-    </div>
+    <>
+    <h2>Seconds: {seconds}</h2>
+    <FocusInput/>
+    
+    </>
+
   )
 }
 
 export default Timer
+
 
